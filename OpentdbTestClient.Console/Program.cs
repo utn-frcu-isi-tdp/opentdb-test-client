@@ -14,6 +14,9 @@ namespace OpentdbTestClient.Console
     {
         static void Main(string[] args)
         {
+            // Establecimiento del protocolo ssl de transporte
+            System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+
             // Url de ejemplo
             var mUrl = "https://opentdb.com/api.php?amount=10";
 
